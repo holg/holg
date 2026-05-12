@@ -71,7 +71,9 @@ Photometric Engineering · BIM/IFC · Lighting Industry Standards
   [rusterando.de](https://rusterando.de).
 
 - **geodb-rs** — offline geolocation library in Rust, with Python
-  and Flutter bindings.
+  and Flutter bindings. 
+  [Live demo](https://trahe.eu/geodb-rs.html) ·
+  [Benchmark](https://trahe.eu/geodb-bench.html).
   · [github](https://github.com/holg/geodb-rs)
   · [crates.io](https://crates.io/crates/geodb-rs)
   · [PyPI](https://pypi.org/project/geodb-rs/)

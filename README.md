@@ -6,17 +6,33 @@ Rust toolchain for the lighting and BIM industries.
 
 ## What I work on
 
-### Lighting & BIM toolchain (crates)
+### Lighting & BIM toolchain
 
-- **[gldf-rs](https://github.com/holg/gldf-rs)** — reference Rust
-  implementation of the international GLDF standard for photometric
-  lighting data
-- **[eulumdat-rs](https://github.com/holg/eulumdat-rs)** — legacy
-  EULUMDAT format with cross-platform bindings
-- **[l3d-rs](https://github.com/holg/l3d-rs)** — L3D format support
-  (used as GLDF 3D model input)
-- **[bimifc](https://github.com/holg/bimifc)** — IFC parsing and
-  BIM viewer core with integrated lighting visualization
+Each core crate ships from a single Rust source tree to multiple
+ecosystems: Rust (crates.io, 28k+ downloads), Python (PyO3 / PyPI,
+200k+ downloads), Swift and Kotlin (UniFFI), Flutter, and WebAssembly.
+
+- **gldf-rs** — reference Rust implementation of the international
+  GLDF standard for photometric lighting data
+  · [github](https://github.com/holg/gldf-rs)
+  · [crates.io](https://crates.io/crates/gldf-rs)
+  · [PyPI](https://pypi.org/project/gldf-rs-python/)
+
+- **eulumdat** — legacy EULUMDAT format with cross-platform bindings
+  · [github](https://github.com/holg/eulumdat-rs)
+  · [crates.io](https://crates.io/crates/eulumdat)
+  · [PyPI](https://pypi.org/project/eulumdat/)
+
+- **l3d-rs** — L3D format support (used as GLDF 3D model input)
+  · [github](https://github.com/holg/l3d-rs)
+  · [crates.io](https://crates.io/crates/l3d-rs)
+  · [PyPI](https://pypi.org/project/l3d-rs-python/)
+
+- **bimifc** — IFC parsing and BIM viewer core with integrated
+  lighting visualization
+  · [github](https://github.com/holg/bimifc)
+  · [crates.io](https://crates.io/crates/bimifc)
+  · [PyPI](https://pypi.org/project/bimifc/)
 
 ### Live showcase sites (Rust + WebAssembly)
 
@@ -25,7 +41,7 @@ Rust toolchain for the lighting and BIM industries.
 - **[gldf.icu](https://gldf.icu)** — GLDF browser toolkit based on
   `gldf-rs`
 - **[eulumdat.icu](https://eulumdat.icu)** — EULUMDAT toolkit based
-  on `eulumdat-rs`
+  on `eulumdat`
 - **[iesna.eu](https://iesna.eu)** — photometric tools and virtual
   goniophotometer
 - **[acadlisp.de](https://acadlisp.de)** — AutoLISP REPL in Rust +
@@ -44,7 +60,7 @@ Rust toolchain for the lighting and BIM industries.
 ## Stack and interests
 
 Rust · WebAssembly · Bevy · wgpu · Apple Metal · Leptos · Axum
-Cross-Platform Bindings (PyO3, UniFFI) · Computer Graphics
+Cross-Platform Bindings (PyO3, UniFFI, Flutter) · Computer Graphics
 Photometric Engineering · BIM/IFC · Lighting Industry Standards
 
 ## Other work
@@ -54,16 +70,24 @@ Photometric Engineering · BIM/IFC · Lighting Industry Standards
   (Leptos + Axum + SQLite + Stripe + APNs + Typst). Demo at
   [rusterando.de](https://rusterando.de).
 
+- **geodb-rs** — offline geolocation library in Rust, with Python
+  and Flutter bindings.
+  · [github](https://github.com/holg/geodb-rs)
+  · [crates.io](https://crates.io/crates/geodb-rs)
+  · [PyPI](https://pypi.org/project/geodb-rs/)
+  · [Flutter](https://pub.dev/packages/geodb_flutter)
+
 ## Links
 
 - [trahe.eu](https://trahe.eu) — main site
 - [crates.io/users/holg](https://crates.io/users/holg) — Rust crates
+- [pypi.org/user/holg](https://pypi.org/user/holg/) — Python packages
 - [github.com/holg](https://github.com/holg) — all repositories
 
 ## Support my open-source work
 
-If your team uses any of my crates in production, or you find value
-in standards-level work for GLDF/EULUMDAT/photometric formats,
-consider [sponsoring me on GitHub](https://github.com/sponsors/holg).
-Every sponsorship directly supports continued maintenance and new
-development.
+If your team uses any of my crates in production — whether through
+crates.io, PyPI, or WebAssembly — or you find value in standards-level
+work for GLDF/EULUMDAT/photometric formats, consider
+[sponsoring me on GitHub](https://github.com/sponsors/holg). Every
+sponsorship directly supports continued maintenance and new development.

@@ -14,7 +14,7 @@ and self-hostable web platforms.
   lighting data
 - **[eulumdat-rs](https://github.com/holg/eulumdat-rs)** — legacy
   EULUMDAT format with cross-platform bindings
-- **[l3d-rs](https://github.com/holg/l3d-rs), [uld-rs](https://github.com/holg/uld-rs)** —
+- **[l3d-rs](https://github.com/holg/l3d-rs)** —
   L3D format support (used as GLDF 3D Model input)
 - **[bimifc.de](https://bimifc.de)** — WebAssembly BIM viewer with
   IFC support and integrated lighting visualization

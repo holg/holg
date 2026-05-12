@@ -11,6 +11,7 @@ Rust toolchain for the lighting and BIM industries.
 Each core crate ships from a single Rust source tree to multiple
 ecosystems: Rust (crates.io, 28k+ downloads), Python (PyO3 / PyPI,
 200k+ downloads), Swift and Kotlin (UniFFI), Flutter, and WebAssembly.
+The same Rust core powers the web showcases and the Apple apps.
 
 - **gldf-rs** — reference Rust implementation of the international
   GLDF standard for photometric lighting data
@@ -47,6 +48,24 @@ ecosystems: Rust (crates.io, 28k+ downloads), Python (PyO3 / PyPI,
 - **[acadlisp.de](https://acadlisp.de)** — AutoLISP REPL in Rust +
   WASM (7,300+ downloads)
 
+### Native Apple platform apps
+
+App Store-distributed. The Rust libraries powering these apps are
+actively maintained; app releases follow as needed.
+
+- **geodb** — offline geolocation lookup based on `geodb-rs`.
+  Native iOS, iPadOS, **watchOS**, and **tvOS**.
+- **gldf** — photometric data viewer for iOS and macOS, built on
+  `gldf-rs`. App release lags the Rust library.
+- **eulumdat** — EULUMDAT data viewer for iOS and macOS, built on
+  `eulumdat`. App release lags the Rust library.
+- **[RoomPlan Simple](https://github.com/holg/RoomPlanExampleApp)** —
+  LiDAR room scanning for iOS with multi-format export (STL, USDZ,
+  DXF, **IFC** via embedded `bimifc` — enabling full IFC rendering,
+  not just conversion), position-tagged photo capture (rendered into
+  the 3D model), and live **WiFi strength heatmap** generated during
+  the scan.
+
 ### Open source contributions
 
 - **Bevy Engine** — Rendering Core PRs (#23436 partial bindless
@@ -60,8 +79,9 @@ ecosystems: Rust (crates.io, 28k+ downloads), Python (PyO3 / PyPI,
 ## Stack and interests
 
 Rust · WebAssembly · Bevy · wgpu · Apple Metal · Leptos · Axum
-Cross-Platform Bindings (PyO3, UniFFI, Flutter) · Computer Graphics
-Photometric Engineering · BIM/IFC · Lighting Industry Standards
+Cross-Platform Bindings (PyO3, UniFFI, Flutter) · watchOS · tvOS
+Computer Graphics · Photometric Engineering · BIM/IFC · Lighting
+Industry Standards
 
 ## Other work
 
@@ -71,9 +91,8 @@ Photometric Engineering · BIM/IFC · Lighting Industry Standards
   [rusterando.de](https://rusterando.de).
 
 - **geodb-rs** — offline geolocation library in Rust, with Python
-  and Flutter bindings. 
-  [Live demo](https://trahe.eu/geodb-rs.html) ·
-  [Benchmark](https://trahe.eu/geodb-bench.html).
+  and Flutter bindings. Live demo and benchmark at
+  [trahe.eu/geodb-rs.html](https://trahe.eu/geodb-rs.html).
   · [github](https://github.com/holg/geodb-rs)
   · [crates.io](https://crates.io/crates/geodb-rs)
   · [PyPI](https://pypi.org/project/geodb-rs/)
